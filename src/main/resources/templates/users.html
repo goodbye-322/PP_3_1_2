@@ -39,7 +39,7 @@
         <form th:method="PATCH" th:object="${user}" th:action="@{/users/{id} (id=${user.getId()})}">
             <td th:type="text" th:utext = "${user.getId()}" th:name="ID"></td>
             <td><input type="text" th:value="${user.getName()}" th:name="name"/></td>
-            <td><input type="text" th:value="${user.getLastName()}" th:name="lastname"></td>
+            <td><input type="text" th:value="${user.getLastName()}" th:name="lastName"></td>
             <td><input type="text" th:value="${user.getAge()}" th:name="age"/></td>
             <td><button type="submit">Edit</button></td>
             <td>
