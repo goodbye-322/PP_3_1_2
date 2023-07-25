@@ -20,10 +20,6 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 public class UsersController {
     private UserService userService;
 
-    public UserService getUserService() {
-        return userService;
-    }
-
     @Autowired
     UsersController(UserService userService) {
         this.userService = userService;
