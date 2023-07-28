@@ -25,13 +25,13 @@ public class UsersController {
         this.userService = userService;
     }
 
-    @GetMapping("")
+    @GetMapping()
     public String getAllUsers(@ModelAttribute("user") User user, Model model) {
         model.addAttribute("users", userService.getAllUser());
         return "users";
     }
 
-    @PostMapping("")
+    @PostMapping()
     public String create(@ModelAttribute("user") User user) {
         userService.createUser(user);
         return "redirect:/users";
